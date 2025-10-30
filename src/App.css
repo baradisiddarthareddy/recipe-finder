@@ -1,0 +1,82 @@
+@import "tailwindcss";
+:root{
+  --bg-gradient-1: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+  --bg-gradient-2: linear-gradient(135deg, #D9AFD9 0%, #97D9E1 100%);
+  --card-gradient: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));
+  --glass: rgba(255,255,255,0.6);
+  --accent-1: #06b6d4; /* teal */
+  --accent-2: #7c3aed; /* purple */
+  --accent-3: #f97316; /* orange */
+  --card-radius: 1rem;
+  --shadow: 0 8px 30px rgba(15, 23, 42, 0.12);
+  --max-width: 48rem; /* 768px */
+}
+
+/* App background (multicolor, layered) */
+body, #root {
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, rgba(124,58,237,0.08), rgba(6,182,212,0.06)), radial-gradient(circle at 10% 10%, rgba(249,115,22,0.05), transparent 20%), var(--bg-gradient-1);
+  background-attachment: fixed;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Central card container used in App */
+.app-card {
+  background: var(--card-gradient);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  padding: 1.25rem; /* 20px */
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* Shared heading styles */
+.app-heading {
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+/* Button variants (if you prefer CSS buttons instead of pure Tailwind) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border-radius: .75rem;
+  padding: .5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+  cursor: pointer;
+}
+.btn:active { transform: translateY(1px); }
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  color: white;
+  box-shadow: 0 6px 20px rgba(99,102,241,0.12);
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(15,23,42,0.06);
+}
+
+/* Responsive input width */
+.responsive-input {
+  width: 100%;
+  max-width: 36rem;
+}
+button{
+  cursor:pointer;
+}
+
+/* small screens tweaks */
+@media (max-width: 640px){
+  :root { --max-width: 36rem; }
+  .app-card { padding: 1rem; border-radius: .875rem; }
+  .responsive-input { max-width: 100%; }
+  .btn { width: 50%; padding: .75rem; border-radius: .6rem; }
+}
