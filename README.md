@@ -26,41 +26,41 @@ Here’s how the app works step-by-step 👇
 🥣 Step-by-Step User Guide
 
 1.Start on the Mood Screen
-  Choose “Yes, let’s cook!” or “Not really 😞”.
-  If you select “Not really,” you’ll get direct links to Zomato and Swiggy to order food.
+  -Choose “Yes, let’s cook!” or “Not really 😞”.
+  -If you select “Not really,” you’ll get direct links to Zomato and Swiggy to order food.
 
 2.Select Ingredients Count
-  Choose how many ingredients (1–5) you have available.
+  -Choose how many ingredients (1–5) you have available.
 
 3.Enter Ingredients
-  Type your ingredient names (like “chicken”, “tomato”, etc.)
-  Click “Get Recipe Ideas 🍽️” to fetch recipes.
+  -Type your ingredient names (like “chicken”, “tomato”, etc.)
+  -Click “Get Recipe Ideas 🍽️” to fetch recipes.
 
 4.View Recipe Suggestions
-  The app shows a grid of meals fetched from TheMealDB.
-  Click on any recipe to open a detailed modal card.
+  -The app shows a grid of meals fetched from TheMealDB.
+  -Click on any recipe to open a detailed modal card.
 
 5.Explore Recipe Details
-  View meal instructions, category, and area.
-  Optionally, watch the YouTube tutorial if available.
+  -View meal instructions, category, and area.
+  -Optionally, watch the YouTube tutorial if available.
 
 6.Restart Flow
-  Use the 🔁 Restart button to start over anytime.
+  -Use the 🔁 Restart button to start over anytime.
 
 ---
 ⚙️ Tech Stack
 
 ##Frontend:
 
-⚛️ React (with Vite)
-🎨 Tailwind CSS
-✨ Framer Motion
-🌐 Axios
-☀️🌙 Dark/Light Theme Toggle (custom hook)
+-⚛️ React (with Vite)
+-🎨 Tailwind CSS
+-✨ Framer Motion
+-🌐 Axios
+-☀️🌙 Dark/Light Theme Toggle (custom hook)
 
 ##API Source:
 
-🍲 TheMealDB API
+-🍲 TheMealDB API
 
 ---
 
