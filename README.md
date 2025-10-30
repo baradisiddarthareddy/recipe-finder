@@ -20,12 +20,3 @@ It’s fully **responsive**, supports **light/dark themes**, and delivers a **mo
 
 ## 🧭 App Flow
 
-```mermaid
-graph TD;
-  A[MoodScreen: Are you in mood to cook?] -->|Yes| B[IngredientCount: Select number of ingredients (1-5)]
-  A -->|No| F[NotInMood: Links to Zomato & Swiggy]
-  B --> C[IngredientEntry: Enter ingredients]
-  C --> D[RecipeGrid: Recipe suggestions from TheMealDB API]
-  D --> E[RecipeModal: View recipe details + YouTube link]
-  E -->|Restart| A
-  F -->|Back to Home| A
